@@ -1,0 +1,52 @@
+.js-loading *, .js-loading *:before, .js-loading *:after {
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+}
+body {
+  // Au clique sur le menu, quand je le refermais, les barres de scroll apparaissaient.
+  // L'overflow hidden sur le body permet de palier à ce problème. -x à l'horizontal du moins..
+  overflow-x: hidden;
+  font-family: 'Comfortaa', sans-serif;
+  line-height: 1.5;
+}
+
+.wrapper {
+  transition: 2s;
+}
+
+body.menu-is-open {
+
+  .menu {
+    animation: fade-slide-down 1.5s cubic-bezier(0, 0.1, 0, 1) forwards;
+    visibility: visible;
+  }
+
+  .wrapper {
+    filter: blur(4px);
+  }
+
+  .header-main__follow {
+    visibility: hidden;
+  }
+
+  .header-main__logo {
+    visibility: hidden;
+  }
+
+  .fa-bars {
+    visibility: hidden;
+  }
+
+  .menu__item {
+    animation: fadeIn 1.5s 1s forwards;
+  }
+}

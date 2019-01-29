@@ -1,0 +1,50 @@
+.header-main {
+  font-family: 'Comfortaa';
+  color: white;
+  font-size: 22px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  perspective: 100px;
+}
+
+.header-main > div {
+  margin-bottom: 2em;
+}
+
+.header-main:after {
+  animation: fade-slide-down 2s cubic-bezier(0, 1, 0.2, 1) forwards;
+  content:  '';
+  background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.6)),
+              // ../ car on est dans le fichier css
+              url('../images/background.jpg') no-repeat top;
+  background-size: cover;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  @media(min-width: 900px){
+    animation: fade-slide-right 2s cubic-bezier(0, 1, 0.2, 1) forwards;
+
+  }
+}
+
+// .header-main:before {
+//   background: #F9FCFF;
+//   content: "";
+//   height: 22em;
+//   left: -5%;
+//   position: absolute;
+//   right: -5%;
+//   top: 90%;
+//   transform: rotateZ(-4deg);
+//   transform-origin: 0 0;
+// }

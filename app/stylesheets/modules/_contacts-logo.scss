@@ -1,0 +1,22 @@
+.contact__item__logo > a {
+  color: white;
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media(max-width: 899px)
+  {
+    font-size: 2em;
+  }
+}
+
+.contact__item__logo__link {
+
+}
+
+
+.contact__item__logo {
+  animation: pulse 2s infinite;
+  position: relative;
+
+}

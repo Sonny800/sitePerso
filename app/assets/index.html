@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sonny Ozanne</title>
+  <meta name="description" content="Développeur web spécialisation WordPress. Page de présentation succincte montrant les compétences et réalisations.">
+  <link rel="icon" href="images/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Baloo" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/vendor.js"></script>
+  <script src="js/app.js"></script>
+
+</head>
+<body class="overflow-is-hidden">
+  <div class="menu ">
+    <a href="/portfolio" class="menu__item">Réalisations</a>
+    <a href="#skills" class="menu__item">Compétences</a>
+    <a href="#contact" class="menu__item">Me Contacter</a>
+
+    <div class="menu__social">
+      <a href="https://www.facebook.com/sonny.ozn" class="menu__social__item"><i class="fab fa-facebook-f"></i></a>
+      <a href="" class="menu__social__item"><i class="fab fa-twitter"></i></a>
+      <a href="" class="menu__social__item"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <a href="" class="menu__item"><i class="fas fa-times"></i></a>
+
+  </div>
+  <div class="wrapper">
+    <!-- HEADER COVER -->
+    <header class="header-main">
+
+      <div class="header-main__logo">
+        <h1 class="header-main__logo__title"><span class="color-effect">
+          sonnyozanne.com
+        </span></h1>
+      </div>
+
+      <div class="header-main__nav">
+        <a href="" class="header-main__nav__item">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+
+      <div class="header-main__follow">
+        <a href="#whoiam">
+        <p class="header-main__follow__title">Qui suis-je?</p>
+        <i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+
+    </header>
+    <!-- /HEADER COVER -->
+
+
+    <!-- MAIN -->
+    <main class="main-home">
+
+
+      <section class="main-whoiam" id="whoiam">
+
+        <!-- CARD -->
+        <section class=" whoiam">
+
+          <div class="whoiam__picture">
+            <img src="images/photo.jpg" alt="" class="whoiam__picture__item">
+          </div>
+
+          <div class="whoiam__informations">
+            <p class="whoiam__informations__title whoiam__informations__name"> Sonny <span class="whoiam__name">OZANNE</span></p>
+            <p class="whoiam__informations__title whoiam__informations__work"> Développeur Web </p>
+            <p class="whoiam__informations__title whoiam__informations__work"> Spécialisation WordPress </p>
+            <p class="whoiam__informations__title whoiam__informations__age"> 28 ans</p>
+            <p class="whoiam__informations__title whoiam__informations__address"> Amiens, France </p>
+
+
+
+            <footer class="footer-card">
+
+                <a href="#skills" class="whoiam__informations__btn__item"><i class="footer-card__icon fas fa-cog"></i><span class="whoiam__informations__btn__item__item">Compétences</span></a>
+                <a href="/portfolio" class=" whoiam__informations__btn__item"><i class="footer-card__icon fas fa-desktop"></i><span class="whoiam__informations__btn__item__item">Réalisations</span></a>
+
+            </footer>
+          </div>
+        </section>
+        <!-- /CARD -->
+      </section>
+
+
+      <!-- SKILLS -->
+      <section class="skills" id="skills">
+
+        <div class="skills__sub">
+          <canvas id="myChartFront"></canvas>
+        </div>
+
+        <div class="skills__sub">
+          <canvas id="myChartBack"></canvas>
+        </div>
+        <div class="skills__sub">
+          <canvas id="myChartAutres"></canvas>
+        </div>
+
+      </section>
+      <!-- /SKILLS -->
+
+
+      <section class="contact " id="contact">
+
+        <div class="contact__item contact__facebook">
+          <!-- <p class=" contact__item__text ">
+            Facebook
+          </p> -->
+          <p class="contact__item__logo">
+            <a href="https://www.facebook.com/sonny.ozn" class="contact__item__logo__link">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="contact__item contact__linkedin">
+          <!-- <p class=" contact__item__text">
+            LinkedIn
+          </p> -->
+          <p class="contact__item__logo">
+            <a href="https://www.linkedin.com/in/sonnyozanne/" class="contact__item__logo__link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="contact__item contact__mail">
+          <!-- <p class=" contact__item__text">
+            Mail
+          </p> -->
+          <p class="contact__item__logo">
+            <a href="mailto:ozanne.sonny@laposte.net" class="contact__item__logo__link">
+              <i class="far fa-envelope"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="contact__item contact__twitter">
+          <!-- <p class=" contact__item__text">
+            Twitter
+          </p> -->
+          <p class="contact__item__logo">
+            <a href="https://twitter.com/ozannesonny" class="contact__item__logo__link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </p>
+        </div>
+
+        <!-- <div class="contact__item contact__github">
+          <p class=" contact__item__text">
+            Github
+          </p>
+          <p class="contact__item__logo">
+            <a href="https://github.com/Sonny800" class="contact__item__logo__link">
+              <i class="fab fa-github"></i>
+            </a>
+          </p>
+        </div> -->
+
+
+      </section>
+    </main>
+    <!-- /MAIN -->
+  </div>
+  <script>
+    // Prepare the body tag by adding a "js-paused" class
+    document.body.className += " js-loading";
+
+    // Listen for when everything has loaded
+    window.addEventListener("load", showPage, false);
+
+    function showPage() {
+      // Remove the "js-paused" class
+      document.body.className = document.body.className.replace("js-loading","");
+    }
+  </script>
+</body>
+</html>

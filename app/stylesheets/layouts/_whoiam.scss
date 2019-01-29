@@ -1,0 +1,40 @@
+.main-whoiam {
+
+  height: 100vh;
+  position: relative;
+  // padding-top: 3em;
+  // background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0)), url('../images/bg-whoiam.jpg') no-repeat center;
+  // background-size: cover;
+  overflow: hidden;
+  @media(min-width: 900px){
+    opacity: 0;
+  }
+}
+
+.whoiam {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+
+  @media(max-width: 899px){
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    line-height: 1.5;
+
+  }
+
+  @media(min-width: 900px){
+    line-height: 1.5;
+
+    width: 60%;
+    align-items: flex-start;
+    margin-left: 43%;
+    height: 100vh;
+    justify-content: center;
+    text-align: right;
+
+  }
+}

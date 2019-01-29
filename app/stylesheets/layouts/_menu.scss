@@ -1,0 +1,94 @@
+.menu {
+  font-family: 'Comfortaa';
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  padding: 2.5em;
+  right: 0;
+  height: 100vh;
+  left: 0;
+  background-color: rgba(0,0,0, 0.5);
+  transition: 1s;
+  // Si je mets pas index, il est invisible (en dessous)
+  z-index: 1;
+  @media(min-width: 900px){
+    font-size: $font-size-large;
+    text-transform: uppercase;
+
+  }
+  @media(max-width: 899px) {
+
+  }
+
+  // CHAQUE ELEMENT DE NAVIGATION
+  &__item {
+    opacity: 0;
+    color: white;
+    font-weight: bold;
+    padding: 1em;
+    @media(max-width: 899px){
+      font-size: $font-size-medium;
+      color: white;
+    }
+  }
+
+  // DIV SOCIAL
+  .menu__social {
+    padding: 1em;
+    margin-top: 2em;
+    border-top: 1px solid white;
+    &__item {
+      padding: 1em;
+      font-size: $font-size-large;
+      color: white;
+    }
+    @media(min-width: 900px) {
+      display: none;
+    }
+  }
+
+  //  CROIX DE FERMETURE
+  .fa-times {
+    color: white;
+    font-size: 1.5em;
+    animation: pulse 1s infinite;
+    @media(max-width: 899px){
+      position: absolute;
+      top: 1em;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 20px;
+      font-size: 28px;
+    }
+    @media(min-width: 900px) {
+      position: absolute;
+      top: 2em;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 20px;
+      font-size: 28px;
+    }
+  }
+
+}
+//  /MENU
+
+// .menu:after {
+//   content: "\f0d7";
+//   font-family: "Font Awesome 5 Free";
+//   background-color: transparent;
+//   color: rgba(255,255,255,0.5);
+//   position: absolute;
+//   font-weight: 900;
+//   font-size: 4em;
+//   right: 0; left: 0;
+//   margin: 0 auto;
+//   bottom: -0.58em;
+//   text-align: center;
+// }

@@ -1,0 +1,62 @@
+.whoiam__informations {
+  @media(min-width: 900px){
+
+  }
+  @media(max-width: 899px){
+    font-size: 1.3em;
+    padding-top: 20vh;
+  }
+
+  &__name{
+    font-weight: bold;
+    @media(min-width: 900px){
+      font-size: 3.5em;
+
+    }
+  }
+  &__age {
+    @media(min-width: 900px){
+      font-size: 2em;
+    }
+  }
+  &__work {
+    @media(min-width: 900px){
+      font-size: 2.25em;
+
+    }
+  }
+
+  &__address {
+    @media(min-width: 900px){
+      font-size: 2em;
+    }
+  }
+  &__mail {
+    @media(min-width: 900px){
+      text-align: center;
+    }
+  }
+  &__link__mail {
+    animation: pulse 2s infinite;
+    font-size: 1.5em;
+    color: $secondary-color;
+    @media(min-width: 900px){
+      font-size: 3.5em;
+
+    }
+  }
+}
+
+.whoiam__name {
+  color: $secondary-color;
+  font-family: 'Baloo';
+  font-weight: 900;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  @media(max-width: 899px){
+
+  }
+  @media(min-width: 900px){
+
+  }
+}

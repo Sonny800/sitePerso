@@ -1,0 +1,38 @@
+.header-main__logo {
+  opacity: 0;
+  color: orange;
+  animation: fadeIn 1s 1s ease-in forwards;
+  margin: 0 auto;
+  text-align: center;
+}
+
+// Fond couleur dynamique sur le logo
+.header-main__logo__title {
+  // DEGRADE COULEUR TEXT
+  background: linear-gradient(to right, white 20%, $secondary-color 60%, white 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  // opacity: 0;
+  color: white;
+  font-size: 2.3em;
+  font-weight: bold;
+  overflow: hidden;
+  padding-right: 0.25em;
+  border-right: 4px solid transparent;
+  -webkit-animation:
+             gradient-text-effect 3s 1s linear infinite,
+             typing-effect 3s 1s steps(100, end),
+             claret 0.5s 1s step-end infinite;
+  margin: 0 auto;
+  text-align: center;
+  @media(max-width: 899px) {
+    font-size: 1.5em;
+  }
+  @media(max-width: 399px) {
+    font-size: 1em;
+  }
+  &__title {
+    padding: 0.5em;
+  }
+}

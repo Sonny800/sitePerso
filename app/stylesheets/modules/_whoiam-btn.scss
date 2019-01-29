@@ -1,0 +1,28 @@
+.whoiam__informations__btn__item {
+  @media(max-width: 899px){
+    color: white;
+    font-weight: bold;
+
+  }
+  @media(min-width: 900px){
+    color: $secondary-color;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  &:hover .fa-cog {
+    animation: rotating 3s linear infinite;
+    transform-origin: center;
+  }
+  &:hover .fa-desktop {
+    animation: pulse 2s linear infinite;
+    transform-origin: center;
+  }
+
+  // J'ai mis dans un span pour faire un padding sur les icones.. Et pas besoin d'adapter le transform origin sur les élements en rotation donc.
+  &__item {
+    @media(min-width: 900px) {
+      padding-left: 0.3em;
+    }
+  }
+}

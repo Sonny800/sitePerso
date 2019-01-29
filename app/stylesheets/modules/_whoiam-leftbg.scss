@@ -1,0 +1,16 @@
+.main-whoiam:before {
+  @media(min-width: 900px){
+    content: "";
+    background: linear-gradient(to top, transparentize($secondary-color, 0.4), transparentize($secondary-color, 0)), url('../images/photo.jpg') no-repeat center;
+    background-size: cover;
+    display: block;
+    width: 40%;
+    top: 0; bottom: 0;
+    position: absolute;
+    float: left;
+    filter: grayscale(30%);
+
+    // -webkit-clip-path: polygon(43% 100%, 100% 100%, 100% 43%);
+    // clip-path: polygon(43% 100%, 100% 100%, 100% 43%);
+  }
+}

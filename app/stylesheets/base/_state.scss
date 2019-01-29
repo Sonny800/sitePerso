@@ -1,0 +1,16 @@
+
+.is-fadeIn-right {
+  @media(min-width: 900px){
+    animation: fade-slide-right 2s ease-in-out forwards;
+  }
+}
+.is-fadeIn-down {
+  @media(min-width: 900px){
+    animation: fade-slide-down 2s ease-in-out forwards;
+  }
+}
+.is-fadeIn-downPhone {
+  @media(max-width: 899px){
+    animation: fade-slide-down 2s ease-in-out forwards;
+  }
+}
