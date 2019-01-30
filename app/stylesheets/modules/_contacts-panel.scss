@@ -47,19 +47,19 @@ position: relative;
   z-index: -1;
 }
 
-// .contact__github {
-//   position: relative;
-// }
-// .contact__github:after {
-//   content: " ";
-//   top: 0; bottom: 0; left: 0; right: 0;
-//   background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
-//               // ../ car on est dans le fichier css
-//               url('https://images.unsplash.com/photo-1477949331575-2763034b5fb5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&ixid=eyJhcHBfaWQiOjF9') no-repeat top;
-//   background-size: cover;
-//   position: absolute;
-//   z-index: -1;
-// }
+.contact__github {
+  position: relative;
+}
+.contact__github:after {
+  content: " ";
+  top: 0; bottom: 0; left: 0; right: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+              // ../ car on est dans le fichier css
+              url('https://images.unsplash.com/photo-1477949331575-2763034b5fb5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&ixid=eyJhcHBfaWQiOjF9') no-repeat top;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
 .is-open {
   flex: 2;
 }
