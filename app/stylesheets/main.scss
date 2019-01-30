@@ -23,7 +23,9 @@
 @import 'modules/skills-charts.scss';
 @import 'modules/contacts-logo.scss';
 @import 'modules/contacts-panel.scss';
-
+.contact__text {
+  color: white;
+  }
 .portfolio {
   display: flex;
   flex-wrap: wrap;
